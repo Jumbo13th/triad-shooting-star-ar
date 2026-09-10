@@ -12,9 +12,6 @@ SCR_ChimeraCharacter : "{836E7E39AAC5888B}Prefabs/Characters/Factions/BLUFOR/US_
     }
    }
   }
-  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
-   Camouflaged 1
-  }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {

@@ -9,6 +9,9 @@ SCR_ChimeraCharacter : "{E21DF8F1C9F59B14}Prefabs/Characters/Factions/BLUFOR/US_
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
    WeaponTemplate "{EDE7F2CE157306AD}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_AP2k_OliveGreen_Sand_Stripes.et"
   }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Camouflaged 1
+  }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {

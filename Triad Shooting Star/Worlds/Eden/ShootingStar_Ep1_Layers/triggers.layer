@@ -1,0 +1,205 @@
+PolylineShapeEntity PortTrigger {
+ coords 4400.92 1.563 11240.451
+ Points {
+  ShapePoint "{6A5537D5D8728357}" {
+   Position 0 -0 0
+  }
+  ShapePoint "{6A5537D5D8725F15}" {
+   Position 5.358 0.148 0.412
+  }
+  ShapePoint "{6A5537D5B5AC8617}" {
+   Position 21.059 0.062 1.262
+  }
+  ShapePoint "{6A5537D5B4C3F63C}" {
+   Position 37.714 4.202 1.941
+  }
+  ShapePoint "{6A5537D5B3D14E3B}" {
+   Position 61.929 4.321 3.202
+  }
+  ShapePoint "{6A5537D5B299F015}" {
+   Position 73.278 4.848 3.43
+  }
+  ShapePoint "{6A5537D5B1B04281}" {
+   Position 91.055 5.685 -30.497
+  }
+  ShapePoint "{6A5537D5B09B2453}" {
+   Position 91.666 5.435 -49.488
+  }
+  ShapePoint "{6A5537D58F35D147}" {
+   Position 93.206 5.079 -78.61
+  }
+  ShapePoint "{6A5537D58E3AE2DA}" {
+   Position 94.915 4.345 -93.168
+  }
+  ShapePoint "{6A5537D58DCB81B7}" {
+   Position 96.913 1.926 -108.129
+  }
+  ShapePoint "{6A5537D58D6C54F0}" {
+   Position 97.328 0.366 -114.502
+  }
+  ShapePoint "{6A5537D58C60F782}" {
+   Position 78.144 0.271 -149.426
+  }
+  ShapePoint "{6A5537D58A0476B4}" {
+   Position 59.914 0.532 -181.061
+  }
+  ShapePoint "{6A5537D5890559D0}" {
+   Position 59.08 0.506 -180.87
+  }
+  ShapePoint "{6A5537D5882D5EF0}" {
+   Position 48.018 0.414 -199.495
+  }
+  ShapePoint "{6A5537D587C0CE02}" {
+   Position 60.805 0.749 -207.027
+  }
+  ShapePoint "{6A5537D586C4B08C}" {
+   Position 42.547 0.283 -234.233
+  }
+  ShapePoint "{6A5537D5858ABA1B}" {
+   Position 36.966 0.031 -236.316
+  }
+  ShapePoint "{6A5537D584E1607B}" {
+   Position 17.599 0.031 -243.648
+  }
+  ShapePoint "{6A5537D5838B41A8}" {
+   Position -5.846 0.719 -256.594
+  }
+  ShapePoint "{6A5537D5828DC879}" {
+   Position -10.243 0.031 -249.007
+  }
+  ShapePoint "{6A5537D581E49C7F}" {
+   Position -63.893 0.03 -283.123
+  }
+  ShapePoint "{6A5537D58013D595}" {
+   Position -78.903 0.339 -278.694
+  }
+  ShapePoint "{6A5537D59F212B9C}" {
+   Position -108.789 0.031 -270.312
+  }
+  ShapePoint "{6A5537D59EC10FD5}" {
+   Position -111.317 0.031 -270.353
+  }
+  ShapePoint "{6A5537D59D2C308D}" {
+   Position -125.47 -3.829 -272.429
+  }
+  ShapePoint "{6A5537D59B8BF068}" {
+   Position -143.409 -8.165 -244.807
+  }
+  ShapePoint "{6A5537D599288049}" {
+   Position -136.118 -8.524 -240.928
+  }
+  ShapePoint "{6A5537D5957BD4B9}" {
+   Position -22.486 -4.774 -2.62
+  }
+  ShapePoint "{6A5537D5935B0B81}" {
+   Position -17.546 -0.49 -1.12
+  }
+  ShapePoint "{6A5537D591AF348B}" {
+   Position -1.4 -0.046 0.073
+  }
+ }
+ IsClosed 1
+}
+GenericEntity PortCapture : "{0966A23E54B971A6}Prefabs/Triggers/LL_Trigger_ZoneCapture.et" {
+ components {
+  LL_TriggerZoneCapture "{69BB4EC6DDE48C6F}" {
+   m_sMessage "The United States captured the port"
+   m_sZoneEntityName "PortTrigger"
+   m_sZoneDisplayName "Port"
+   m_sAttackerFaction "US"
+   m_sDefenderFaction "USSR"
+   m_aFlagNames {
+    "Flag1"
+    "Flag2"
+    "Flag3"
+    "Flag4"
+    "Flag5"
+    "Flag6"
+   }
+   m_fStatPoints 20
+   m_fStatMaxPerPlayer 1
+   m_aConditions {
+    LL_TriggerFactionCondition "{69BD22C0D8849EA6}" {
+     m_sFaction "US"
+     m_sVersusFaction "USSR"
+    }
+    LL_TriggerFactionCondition "{69BD22C261674367}" {
+     m_sFaction "US"
+    }
+   }
+  }
+ }
+ coords 4422.412 1.625 11069.014
+}
+$grp GenericEntity : "{2808BD90796C1E4E}Prefabs/Triggers/LL_Trigger_CriticalLoss.et" {
+ USSRLoss {
+  components {
+   LL_TriggerCriticalLoss "{69BD22C250937F93}" {
+    m_sMessage "The USSR suffered critical losses"
+    m_iThreshold 5
+   }
+  }
+  coords 4423.252 1.625 11068.929
+ }
+ USLoss {
+  components {
+   LL_TriggerCriticalLoss "{69BD22C250937F93}" {
+    m_sMessage "The United States suffered critical losses"
+    m_sFactionKey "US"
+    m_iThreshold 7
+   }
+  }
+  coords 4424.07 1.625 11069.381
+ }
+}
+GenericEntity MissionTimer : "{41A08F78A490DA42}Prefabs/Triggers/LL_Trigger_MissionEndTimer.et" {
+ components {
+  LL_TriggerMissionEndTimer "{69BD22C4CE5A4300}" {
+   m_sMessage "The attack failed to complete its objective in time"
+   m_iSeconds 4800
+  }
+ }
+ coords 4424.098 1.613 11070.721
+}
+$grp GenericEntity : "{5C5FB5572DDBB20C}Prefabs/Triggers/LL_Trigger_Supremacy.et" {
+ USSRSupremacy {
+  components {
+   LL_TriggerSupremacy "{6A1CE475F3AA0C1C}" {
+    m_sMessage "The Soviet side gained an advantage over the US side."
+    m_sFactionKey "USSR"
+    m_sVersusFaction "US"
+    m_fSupremacyRatio 4
+   }
+  }
+  coords 4424.296 1.623 11069.803
+ }
+ USSupremacy {
+  components {
+   LL_TriggerSupremacy "{6A1CE475F3AA0C1C}" {
+    m_sMessage "The US side gained an advantage over the Soviet side."
+    m_fSupremacyRatio 4
+   }
+  }
+  coords 4424.495 1.611 11070.546
+ }
+}
+$grp GenericEntity : "{8C5EB89AA51483A4}Prefabs/Structures/Military/Flags/FlagPole_02/LL_FlagPole.et" {
+ Flag1 {
+  coords 4312.098 3.248 10975.684
+ }
+ Flag2 {
+  coords 4427.676 5.813 11235.851
+ }
+ Flag3 {
+  coords 4416.09 1.618 11061.369
+ }
+ Flag4 {
+  coords 4450.452 5.781 11170.998
+ }
+ Flag5 {
+  coords 4368.434 2.101 11025.323
+ }
+ Flag6 {
+  coords 4426.675 1.594 11132.824
+ }
+}
