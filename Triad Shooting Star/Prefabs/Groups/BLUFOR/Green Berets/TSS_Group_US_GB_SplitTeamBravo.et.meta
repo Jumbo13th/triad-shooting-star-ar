@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C5DCFAF7FE9D8A24}Prefabs/Groups/BLUFOR/Green Berets/TSS_Group_US_GB_SplitTeamBravo.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

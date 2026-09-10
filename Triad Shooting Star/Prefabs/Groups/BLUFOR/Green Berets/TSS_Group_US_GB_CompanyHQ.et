@@ -1,0 +1,24 @@
+SCR_AIGroup : "{EACD97CF4A702FAE}Prefabs/Groups/BLUFOR/Group_US_Base.et" {
+ ID "0000000000000001"
+ components {
+  AIFormationComponent "{507E9DC12F541FE6}" {
+   DefaultFormation "line"
+  }
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    Name "#TSS-Groups_CompanyHQ"
+    m_aAuthoredLabels + {
+     GROUPSIZE_SMALL
+    }
+    m_bUseUIInfoName 1
+    m_MilitarySymbol SCR_MilitarySymbol "{563682D06ED5ACD9}" {
+     m_Identity BLUFOR
+     m_Icons RECON
+    }
+   }
+  }
+ }
+ m_aUnitPrefabSlots {
+  "{474E5CFEC22407A1}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_CompanyCommander.et" "{51FAC1CBEA3DAD63}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_CompanyXO.et"
+ }
+}

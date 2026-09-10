@@ -1,0 +1,37 @@
+SCR_ChimeraCharacter : "{5DDF9D2151EA544B}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_ODA_Base.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{0CF54B9A85D8E0D4}Prefabs/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#TSS-Characters_DetachmentCommander"
+    IconSetName "EditableEntity_Character_Special_Forces"
+    m_aAuthoredLabels {
+     GROUPSIZE_SMALL ENTITYTYPE_CHARACTER FACTION_US ROLE_LEADER
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{A016D4D3B9D40A58}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_4x20_OliveGreen_Solid.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponTemplate "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6A532E0ABACBB755}" {
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+SCR_AIGroup : "{EACD97CF4A702FAE}Prefabs/Groups/BLUFOR/Group_US_Base.et" {
+ ID "0000000000000001"
+ components {
+  AIFormationComponent "{507E9DC12F541FE6}" {
+   DefaultFormation "line"
+  }
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    Name "#TSS-Groups_SplitTeamBravo"
+    m_aAuthoredLabels + {
+     GROUPSIZE_LARGE
+    }
+    m_bUseUIInfoName 1
+    m_MilitarySymbol SCR_MilitarySymbol "{563682D06ED5ACD9}" {
+     m_Identity BLUFOR
+     m_Icons RECON
+    }
+   }
+  }
+ }
+ m_aUnitPrefabSlots {
+  "{DBC0C6017A216A5C}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_AsstDetachmentCommander.et" "{1FEED5EA3EE3F5D0}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_IntelSergeant.et" "{2DC2CDD5F86B1319}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_WeaponsSergeant_M14.et" "{6045B33EC01D69FA}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_EngineerSergeant.et" "{08EA49BDD8989B29}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_MedicalSergeant.et" "{6480ACF74262112B}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_CommsSergeant.et"
+ }
+}

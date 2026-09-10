@@ -1,0 +1,28 @@
+SCR_ChimeraCharacter : "{AA51567E85E7DD48}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_OperationsSergeant.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#TSS-Characters_IntelSergeant"
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{19231774D1D67091}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_TigerStripe.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{293F577C298061E3}Prefabs/Characters/Uniforms/Jacket_US_BDU_02.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6A532E0ABACBB755}" {
+     TargetStorage "Vest/Vest_ALICE_GL.et/Suspenders/Vest_ALICE_suspenders_2.et"
+     TargetPurpose 64
+    }
+   }
+  }
+ }
+}

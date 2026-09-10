@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{51FAC1CBEA3DAD63}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_CompanyXO.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,49 @@
+SCR_ChimeraCharacter : "{5DDF9D2151EA544B}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_ODA_Base.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#TSS-Characters_MedicalSergeant"
+    IconSetName "EditableEntity_Character_Medic"
+    m_aAuthoredLabels {
+     GROUPSIZE_SMALL ENTITYTYPE_CHARACTER FACTION_US ROLE_MEDIC
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{ED492F11FCFAE30A}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_4x20_OliveGreen_Sand_Stripes.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{9911F55EC05D1A64}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat_Patrol_US_02.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{C6BE0A871E7DE807}Prefabs/Characters/Uniforms/Pants_US_BDU_TigerStripe.et"
+    }
+    SCR_FeetLoadoutSlotInfo Boots {
+     Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{4805E67E2AE30F8D}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et"
+    }
+    LoadoutSlotInfo HandWear {
+     Prefab "{4F71E7468E78DDD2}Prefabs/Characters/Handwear/Gloves_Leather_01/Gloves_Leather_01.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6A532E05E07E564B}" {
+     TargetStorage "Pants/Pants_US_BDU_TigerStripe.et"
+    }
+    ItemsInitConfigurationItem "{6A532E0BFAD207EF}" {
+     TargetStorage "Back/Backpack_Medical_M5.et"
+     PrefabsToSpawn {
+      "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et" "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et"
+     }
+    }
+   }
+  }
+ }
+}

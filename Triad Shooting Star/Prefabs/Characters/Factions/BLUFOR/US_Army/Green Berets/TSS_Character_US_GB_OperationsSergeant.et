@@ -1,0 +1,89 @@
+SCR_ChimeraCharacter : "{5DDF9D2151EA544B}Prefabs/Characters/Factions/BLUFOR/US_Army/Green Berets/TSS_Character_US_GB_ODA_Base.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{0CF54B9A85D8E0D4}Prefabs/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#TSS-Characters_OperationsSergeant"
+    IconSetName "EditableEntity_Character_Grenadier"
+    m_aAuthoredLabels {
+     GROUPSIZE_SMALL ENTITYTYPE_CHARACTER FACTION_US ROLE_GRENADIER
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{C417FBA57578B2E1}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_M203_OliveGreen_Sand_Stripes.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   AttachType InventoryStorageSlot "{0C3DA650B52E127A}" {
+    Prefab "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{E685A8D337D36204}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_w_goggles.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{86BBBEFE6A2F7B5A}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup_TigerStripe.et"
+    }
+    LoadoutSlotInfo ArmoredVest {
+     Prefab ""
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{C6BE0A871E7DE807}Prefabs/Characters/Uniforms/Pants_US_BDU_TigerStripe.et"
+    }
+    SCR_FeetLoadoutSlotInfo Boots {
+     Prefab "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{18B8B9316B590643}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_GL.et"
+    }
+    LoadoutSlotInfo HandWear {
+     Prefab "{4F71E7468E78DDD2}Prefabs/Characters/Handwear/Gloves_Leather_01/Gloves_Leather_01.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6A532E05E07E564B}" {
+     TargetStorage "Pants/Pants_US_BDU_TigerStripe.et"
+    }
+    ItemsInitConfigurationItem "{6A532E0ABACBB755}" {
+     TargetStorage "Vest/Vest_ALICE_GL.et/Suspenders/Vest_ALICE_suspenders_2.et"
+     TargetPurpose 64
+    }
+    ItemsInitConfigurationItem "{6A532E0AEC85268E}" {
+     TargetStorage "Vest/Vest_ALICE_GL.et/MagPouch/Pouch_ALICE_30rnd_STANAG_base.et"
+    }
+    ItemsInitConfigurationItem "{6A532E0AAA106BE9}" {
+     TargetStorage "Vest/Vest_ALICE_GL.et/MagPouch2/Pouch_ALICE_30rnd_STANAG_base.et"
+    }
+    ItemsInitConfigurationItem "{6A532E0A475A3B36}" {
+     TargetStorage "Vest/Vest_ALICE_GL.et/Buttpack/Vest_ALICE_buttpack.et"
+    }
+    ItemsInitConfigurationItem "{6A532E0BFAD207EF}" {
+     PrefabsToSpawn + {
+      "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6A532E1378769A94}" {
+     TargetStorage "Vest/Vest_ALICE_GL.et/FirstAid/Vest_M79GrenadeCarrier.et"
+     PrefabsToSpawn {
+      "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et" "{BDD18BEEC1165353}Prefabs/Weapons/Ammo/Ammo_Grenade_Smoke_M713_Red.et" "{BDD18BEEC1165353}Prefabs/Weapons/Ammo/Ammo_Grenade_Smoke_M713_Red.et" "{8D0A57DD48B62639}Prefabs/Weapons/Ammo/Ammo_Grenade_Smoke_M715_Green.et" "{8D0A57DD48B62639}Prefabs/Weapons/Ammo/Ammo_Grenade_Smoke_M715_Green.et"
+     }
+    }
+   }
+  }
+ }
+}

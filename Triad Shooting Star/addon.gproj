@@ -1,0 +1,83 @@
+GameProject {
+ ID "TriadShootingStar"
+ GUID "6A532B9CA6AD5B97"
+ TITLE "Triad Shooting Star"
+ Dependencies {
+  "58D0FB3206B6F859" "699319AAA5BFC57F"
+ }
+ Configurations {
+  GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{6A532E0E496B9A63}" {
+      StringTableSource "{A6A1835E476FA6F3}Language/tss_localization.st"
+      Languages {
+       LanguageDefinition "{6A532E0E47A754DE}" {
+        Code "cs_cz"
+        StringTableRuntime "{874E7E0131B3407F}Language/tss_localization.cs_cz.conf"
+       }
+       LanguageDefinition "{6A532E0E47A754E4}" {
+        Code "de_de"
+        StringTableRuntime "{523064322210515F}Language/tss_localization.de_de.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75416}" {
+        Code "en_us"
+        StringTableRuntime "{0CC0EE7948E3545E}Language/tss_localization.en_us.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75404}" {
+        Code "es_es"
+        StringTableRuntime "{C98CA3F0A6E13F41}Language/tss_localization.es_es.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75434}" {
+        Code "fr_fr"
+        StringTableRuntime "{722456C74062DC43}Language/tss_localization.fr_fr.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75425}" {
+        Code "it_it"
+        StringTableRuntime "{F238D9F3ED405FBA}Language/tss_localization.it_it.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75451}" {
+        Code "ja_jp"
+        StringTableRuntime "{E2236461D3316F11}Language/tss_localization.ja_jp.conf"
+       }
+       LanguageDefinition "{6A532E0E47A7545C}" {
+        Code "ko_kr"
+        StringTableRuntime "{429D4CCD401C6C2E}Language/tss_localization.ko_kr.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75448}" {
+        Code "pl_pl"
+        StringTableRuntime "{1EECEA37FEF3F052}Language/tss_localization.pl_pl.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75474}" {
+        Code "pt_br"
+        StringTableRuntime "{CB9B70FBC50D3AE8}Language/tss_localization.pt_br.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75463}" {
+        Code "ru_ru"
+        StringTableRuntime "{9EDA645358745F9E}Language/tss_localization.ru_ru.conf"
+       }
+       LanguageDefinition "{6A532E0E47A75597}" {
+        Code "uk_ua"
+        StringTableRuntime "{148231A5345AE1CB}Language/tss_localization.uk_ua.conf"
+       }
+       LanguageDefinition "{6A532E0E47A755E4}" {
+        Code "zh_cn"
+        StringTableRuntime "{CE325F980DFA31D6}Language/tss_localization.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

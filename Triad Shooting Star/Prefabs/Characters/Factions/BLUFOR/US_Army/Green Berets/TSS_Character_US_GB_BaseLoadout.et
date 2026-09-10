@@ -1,0 +1,48 @@
+SCR_ChimeraCharacter : "{836E7E39AAC5888B}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Base.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Camouflaged 1
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{19231774D1D67091}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_TigerStripe.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{3D17E4FA8F819ECD}Prefabs/Characters/Uniforms/Jacket_US_BDU_TigerStripe.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et"
+    }
+    SCR_FeetLoadoutSlotInfo Boots {
+     Prefab "{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6A532E05E07E564B}" {
+     TargetStorage "Pants/Pants_US_BDU.et"
+     PrefabsToSpawn {
+      "{E6E6ADFEE8D2FFD0}Prefabs/Items/Equipment/Radios/TSS_Radio_ANPRC68.et" "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" "{922F95F91943F69A}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_US.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{3238FC0BDB67AA78}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01_base.et" "{3238FC0BDB67AA78}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01_base.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{6E35D94130954509}Prefabs/Items/Equipment/Accessories/ETool_ALICE/ETool_ALICE_FreeRoamBuilding_Gadget.et"
+     }
+    }
+   }
+  }
+ }
+}
