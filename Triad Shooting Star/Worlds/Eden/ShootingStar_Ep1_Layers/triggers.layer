@@ -1,8 +1,12 @@
 PolylineShapeEntity PortTrigger {
+ components {
+  LL_StatZoneComponent "{6A57505BC330FA95}" {
+  }
+ }
  coords 4400.92 1.563 11240.451
  Points {
   ShapePoint "{6A5537D5D8728357}" {
-   Position 0 -0 0
+   Position 0 0 0
   }
   ShapePoint "{6A5537D5D8725F15}" {
    Position 5.358 0.148 0.412
@@ -122,6 +126,7 @@ GenericEntity PortCapture : "{0966A23E54B971A6}Prefabs/Triggers/LL_Trigger_ZoneC
     LL_TriggerFactionCondition "{69BD22C0D8849EA6}" {
      m_sFaction "US"
      m_sVersusFaction "USSR"
+     m_fVersusMultiplier 3
     }
     LL_TriggerFactionCondition "{69BD22C261674367}" {
      m_sFaction "US"

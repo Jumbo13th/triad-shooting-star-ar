@@ -10,5 +10,25 @@ PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/Perc
  coords 6120.51 157.494 6279.017
 }
 LL_GameModeCoop LL_GameMode_Lobby1 : "{E270881FCEBB1B99}Prefabs/MP/Modes/Editor/LL_GameMode_Lobby.et" {
+ components {
+  LL_VehicleAccess "{6A57505C72D555F6}" {
+   m_aCrewRoles {
+    LL_CrewRoleEntry "{6A57505C47D50AF4}" {
+     m_sPrefab "{EB476CF0773C1787}Prefabs/Characters/Factions/OPFOR/USSR_Army/Naval/TT_Character_USSR_SL_Naval.et"
+    }
+    LL_CrewRoleEntry "{6A57505C5120AB16}" {
+     m_sPrefab "{04A770DC3EF6F3BD}Prefabs/Characters/Factions/OPFOR/USSR_Army/Naval/TT_Character_USSR_Driver_Naval.et"
+    }
+   }
+   m_aRestrictedVehicles {
+    LL_RestrictedVehicleEntry "{6A57505C27A9594A}" {
+     m_sPrefab "{29853A7F3C6E8E91}Prefabs/Vehicles/Wheeled/BTR70/TT_BTR70.et"
+    }
+    LL_RestrictedVehicleEntry "{6A57505C2403FB42}" {
+     m_sPrefab "{254289B9C09904AB}Prefabs/Vehicles/Wheeled/BRDM2/BRDM2.et"
+    }
+   }
+  }
+ }
  coords 6120.989 157.789 6282.42
 }
