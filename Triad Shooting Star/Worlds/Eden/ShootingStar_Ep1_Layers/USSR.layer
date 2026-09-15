@@ -101,20 +101,6 @@ $grp SCR_AIGroup : "{00EED2BC36014B00}Prefabs/Groups/OPFOR/TT_Group_USSR_RifleSq
   angles 0 59.063 0
  }
 }
-$grp Turret : "{1A407760EEAE4156}Prefabs/Vehicles/Static/BaconZU23/BaconZU23_Turret_Deployed.et" {
- {
-  coords 4343.375 1.688 11008.863
-  angles 2.195 140.855 -0.237
- }
- {
-  coords 4407.02 6.168 11293.357
-  angles -0.484 77.423 1.942
- }
- {
-  coords 4576.658 24.274 11133.963
-  angles 0.195 77.433 0.874
- }
-}
 Vehicle BRDM1 : "{254289B9C09904AB}Prefabs/Vehicles/Wheeled/BRDM2/BRDM2.et" {
  components {
   LL_VehicleSquadLinkComponent "{69A2BAB93BE1FBF2}" {
@@ -610,87 +596,6 @@ $grp GenericEntity : "{A48EDE9CBA71B5A3}Prefabs/Props/Military/AmmoBoxes/USSR/Eq
   coords 4410.056 1.594 11153.709
   angles 0 -92.402 0
  }
- {
-  components {
-   SCR_SoundDataComponent "{5C53391603B5CF41}" {
-    Enabled 1
-   }
-   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
-    Enabled 1
-    MultiSlots {
-     MultiSlotConfiguration "{6A573EDAC9EFE46D}" {
-      SlotTemplate InventoryStorageSlot ZU {
-       Prefab "{AB801054310BC947}Prefabs/Weapons/Magazines/Box_BaconZU23_23x152.et"
-      }
-      NumSlots 8
-     }
-    }
-    m_fMaxWeight 10000
-   }
-   ActionsManagerComponent "{5476B36C403D4CC0}" {
-    Enabled 1
-   }
-   RplComponent "{5476B36C54387F41}" {
-    Enabled 1
-   }
-  }
-  coords 4346.206 1.701 11009.539
-  angles -2.308 -92.449 1.169
- }
- {
-  components {
-   SCR_SoundDataComponent "{5C53391603B5CF41}" {
-    Enabled 1
-   }
-   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
-    Enabled 1
-    MultiSlots {
-     MultiSlotConfiguration "{6A573EDAC9EFE46D}" {
-      SlotTemplate InventoryStorageSlot ZU {
-       Prefab "{AB801054310BC947}Prefabs/Weapons/Magazines/Box_BaconZU23_23x152.et"
-      }
-      NumSlots 8
-     }
-    }
-    m_fMaxWeight 10000
-   }
-   ActionsManagerComponent "{5476B36C403D4CC0}" {
-    Enabled 1
-   }
-   RplComponent "{5476B36C54387F41}" {
-    Enabled 1
-   }
-  }
-  coords 4409.175 6.09 11291.745
-  angles 0.274 -72.194 -0.852
- }
- {
-  components {
-   SCR_SoundDataComponent "{5C53391603B5CF41}" {
-    Enabled 1
-   }
-   SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
-    Enabled 1
-    MultiSlots {
-     MultiSlotConfiguration "{6A573EDAC9EFE46D}" {
-      SlotTemplate InventoryStorageSlot ZU {
-       Prefab "{AB801054310BC947}Prefabs/Weapons/Magazines/Box_BaconZU23_23x152.et"
-      }
-      NumSlots 8
-     }
-    }
-    m_fMaxWeight 10000
-   }
-   ActionsManagerComponent "{5476B36C403D4CC0}" {
-    Enabled 1
-   }
-   RplComponent "{5476B36C54387F41}" {
-    Enabled 1
-   }
-  }
-  coords 4577.943 24.281 11136.117
-  angles 0 -151.674 0
- }
 }
 $grp SCR_EditorRestrictionZoneEntity : "{B2A519402E9AC209}PrefabsEditable/RestrictionZone/E_EditorRestrictionZoneLarge.et" {
  {
@@ -857,6 +762,13 @@ $grp Vehicle : "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tra
     }
     m_fDustTopSpeed 60
    }
+   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+    m_aWheels +{
+     4
+     5
+    }
+    m_fDustTopSpeed 60
+   }
   }
   coords 4421.512 1.594 11144.492
   angles 0 175.855 0
@@ -865,6 +777,13 @@ $grp Vehicle : "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tra
   components {
    LL_VehicleSquadLinkComponent "{69A2BAB93BE1FBF2}" {
     m_sGroupName "AR_S2"
+   }
+   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+    m_aWheels +{
+     4
+     5
+    }
+    m_fDustTopSpeed 60
    }
    SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
     m_aWheels +{
@@ -903,31 +822,15 @@ $grp Vehicle : "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tra
     }
     m_fDustTopSpeed 60
    }
+   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+    m_aWheels +{
+     4
+     5
+    }
+    m_fDustTopSpeed 60
+   }
   }
   coords 4423.374 1.594 11118.806
-  angles 0 175.855 0
- }
- Ural4320_transport_covered4 {
-  components {
-   LL_VehicleSquadLinkComponent "{69A2BAB93BE1FBF2}" {
-    m_sGroupName "AR_S4"
-   }
-   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
-    m_aWheels +{
-     4
-     5
-    }
-    m_fDustTopSpeed 60
-   }
-   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
-    m_aWheels +{
-     4
-     5
-    }
-    m_fDustTopSpeed 60
-   }
-  }
-  coords 4424.221 1.594 11107.121
   angles 0 175.855 0
  }
  Ural4320_transport_covered5 {
@@ -949,8 +852,34 @@ $grp Vehicle : "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tra
     }
     m_fDustTopSpeed 60
    }
+   SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+    m_aWheels +{
+     4
+     5
+    }
+    m_fDustTopSpeed 60
+   }
   }
   coords 4425.177 1.594 11093.938
   angles 0 175.855 0
  }
+}
+Vehicle Ural4320_ZU1 : "{FD109F3702AAB392}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ZU23.et" {
+ components {
+  LL_VehicleSquadLinkComponent "{69A2BAB93BE1FBF2}" {
+   m_sGroupName "AR_S4"
+  }
+  SCR_UniversalInventoryStorageComponent "{5916C58171230A92}" {
+   MultiSlots {
+    MultiSlotConfiguration "{6120DB373E32BDDD}" {
+     NumSlots 12
+    }
+   }
+  }
+  SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+   m_fDustTopSpeed 60
+  }
+ }
+ coords 4424.107 1.623 11106.577
+ angles -0.067 175.683 -0.893
 }
